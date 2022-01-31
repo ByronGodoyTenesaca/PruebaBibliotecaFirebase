@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listado-libros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header> Libros </ion-list-header>
+    
+    <ion-item *ngFor="let libro of libros | async">
+    
+      <ion-label>
+        <h2>Titulo: {{libro.titulo}}</h2>
+        <h2>Autor: {{libro.autor}}</h2>
+        <h2>Resumen: {{libro.resumen}}</h2>
+      </ion-label>
+    
+    </ion-item>
+    
+    </ion-list>
+
+
+</ion-content>
